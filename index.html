@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Myntra Clone</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/images/favicon.ico" />
+    <script src="assets/js/app.js"></script>
+
+    <style>
+      .same-size-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    </style>
+
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-danger" href="#">mYnTra</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Men</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Home & Living</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Beauty</a></li>
+        </ul>
+        <form class="d-flex w-50">
+          <input class="form-control me-2" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+        <div class="d-flex ms-3 align-items-center gap-3">
+          <a href="#" class="text-decoration-none text-dark">Profile</a>
+          <a href="#" class="text-decoration-none text-dark">Wishlist</a>
+          <a href="#" class="text-decoration-none text-dark">Bag</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=2000&auto=format&fit=crop" class="d-block w-100" alt="Fashion Banner 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=2000&auto=format&fit=crop" class="d-block w-100" alt="Fashion Banner 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1520975657287-8bdf0a1b49a0?q=80&w=2000&auto=format&fit=crop" class="d-block w-100" alt="Fashion Banner 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class="container my-5">
+    <h2 class="h4 mb-4">Categories To Bag</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <img src="https://images.unsplash.com/photo-1475724017904-b712052c192a?w=800&q=80" class="card-img-top" alt="Men">
+          <div class="card-body text-center"><a href="#" class="stretched-link text-decoration-none">Men</a></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?w=800&q=80" class="card-img-top" alt="Women">
+          <div class="card-body text-center"><a href="#" class="stretched-link text-decoration-none">Women</a></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=800&q=80" class="card-img-top" alt="Kids">
+          <div class="card-body text-center"><a href="#" class="stretched-link text-decoration-none">Kids</a></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&q=80" class="card-img-top" alt="Beauty">
+          <div class="card-body text-center"><a href="#" class="stretched-link text-decoration-none">Beauty</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="h4 mb-4">Biggest Deals</h2>
+    <div class="row g-4">
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Roadster</h6>
+            <p class="text-muted small mb-2">Men Printed T-shirt</p>
+            <div>
+              <span class="fw-bold">₹499</span>
+              <span class="text-muted text-decoration-line-through ms-2">₹999</span>
+              <span class="text-success ms-2">(50% OFF)</span>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-danger w-100 add-to-bag" data-id="1">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?w=800&q=80" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h6 class="card-title mb-1">H&M</h6>
+            <p class="text-muted small mb-2">Women Floral Dress</p>
+            <div>
+              <span class="fw-bold">₹1,299</span>
+              <span class="text-muted text-decoration-line-through ms-2">₹2,599</span>
+              <span class="text-success ms-2">(50% OFF)</span>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-danger w-100 add-to-bag" data-id="2">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=800&q=80" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Nike</h6>
+            <p class="text-muted small mb-2">Unisex Sneakers</p>
+            <div>
+              <span class="fw-bold">₹3,299</span>
+              <span class="text-muted text-decoration-line-through ms-2">₹5,499</span>
+              <span class="text-success ms-2">(40% OFF)</span>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-danger w-100 add-to-bag" data-id="3">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&q=80" class="card-img-top" alt="Product 4">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Boat</h6>
+            <p class="text-muted small mb-2">Earbuds</p>
+            <div>
+              <span class="fw-bold">₹1,999</span>
+              <span class="text-muted text-decoration-line-through ms-2">₹3,999</span>
+              <span class="text-success ms-2">(50% OFF)</span>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-danger w-100 add-to-bag" data-id="4">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container my-5">
+    <h2 class="h4 mb-4">Latest Looks</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-4">
+        <img src="https://i.guim.co.uk/img/media/87a80bcceaf4911a0d5e14a2df0ab193caea0547/54_733_9885_5932/master/9885.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=4e0f64fe7082b2ea9a50d3b54ec27770" class="img-fluid rounded" alt="Look 1">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="https://static.zara.net/assets/public/25be/066f/6ec44f079b6d/002f0b7530f9/img-01-redesing-6e8cff4e-e703-490f-8bea-cc583919b818_0/img-01-redesing-6e8cff4e-e703-490f-8bea-cc583919b818_0.jpg?ts=1753952026602" class="img-fluid rounded" alt="Look 2">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpSEaX5c8JkU_qaHYkcntPyXo_87GbDj-JJg&s" class="img-fluid rounded" alt="Look 3">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="https://static01.nyt.com/images/2024/03/07/multimedia/07KYLIE-bjhk/07KYLIE-bjhk-mobileMasterAt3x.jpg?auto=webp&quality=90" class="img-fluid rounded" alt="Look 4">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="https://assets.vogue.com/photos/58915876e8e3104f57c72a9d/master/pass/zayn-malik-vogue.jpg" class="img-fluid rounded" alt="Look 5">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="https://assets.vogue.com/photos/5891af9bce34fb453af7c7e0/master/pass/harry-styles-long-hair.jpg" class="img-fluid rounded" alt="Look 6">
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light border-top py-4 mt-5">
+    <div class="container d-flex flex-wrap justify-content-between gap-3">
+      <div>
+        <div class="fw-bold mb-2">ONLINE SHOPPING</div>
+        <ul class="list-unstyled small">
+          <li><a class="text-decoration-none text-dark" href="#">Men</a></li>
+          <li><a class="text-decoration-none text-dark" href="#">Women</a></li>
+          <li><a class="text-decoration-none text-dark" href="#">Kids</a></li>
+          <li><a class="text-decoration-none text-dark" href="#">Home & Living</a></li>
+          <li><a class="text-decoration-none text-dark" href="#">Beauty</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fw-bold mb-2">USEFUL LINKS</div>
+        <ul class="list-unstyled small">
+          <li><a class="text-decoration-none text-dark" href="#">Contact Us</a></li>
+          <li><a class="text-decoration-none text-dark" href="#">FAQ</a></li>
+          <li><a class="text-decoration-none text-dark" href="#">T&C</a></li>
+          <li><a class="text-decoration-none text-dark" href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fw-bold mb-2">EXPERIENCE MYNTRA APP</div>
+        <div class="d-flex gap-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Available_on_the_App_Store_%28black%29_SVG.svg" alt="App Store" height="40">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Get_it_on_Google_play.svg" alt="Google Play" height="40">
+        </div>
+      </div>
+    </div>
+    <div class="container"><p class="small text-muted mt-3 mb-0">Myntra.</p></div>
+  </footer>
+
+</body>
+</html>
